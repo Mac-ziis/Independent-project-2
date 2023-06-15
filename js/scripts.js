@@ -1,10 +1,16 @@
-window.onload = function() {
-  const form = document.getElementById('language-selector').value;
-  form.onsubmit = function (event) {
-    event.preventDefault();
-  }
-
-  document.querySelector()
-  document.querySelector("div#recommendation").removeAttribute("class");
-
+const init = function() {
+  document.getElementById("btn").addEventListener("click", submit);
+  document.getElementById("btn").addEventListener("click", cancel);
 }
+
+const cancel = function(ev){
+  ev.preventDefault();
+  document.getElementById("dropdown").reset();
+}
+
+const submit = function(ev) {
+  ev.preventDefault();
+  
+}
+
+document.addEventListener("DOMContentLoaded", init);
