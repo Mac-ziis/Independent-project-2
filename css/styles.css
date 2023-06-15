@@ -40,6 +40,23 @@
   padding-bottom: 10px;
 }
 
-.columns {
-  
+#get {
+  text-align: center;
+}
+
+.btn {
+  color: #fffffe;
+  background-color: #8c7851;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.3s;
+  border: 1px double black;
+}
+
+.btn:hover {
+  background-color: #f25042;
+}
+
+.hidden {
+  display: none;
 }
