@@ -86,6 +86,9 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (value1 && value5 && value3) {
       document.getElementById("recommendation2").removeAttribute("class", "hidden");
       responseDisplayed = true;
+    } else if (value7 && value5 && value1) {
+      document.getElementById("recommendation3").removeAttribute("class", "hidden");
+      responseDisplayed = true;
     } else {
       document.getElementById("recommendation4").removeAttribute("class", "hidden");
       responseDisplayed = true;
