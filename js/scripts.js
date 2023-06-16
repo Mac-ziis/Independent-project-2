@@ -8,21 +8,21 @@
 //   ev.preventDefault();
 // }
 
-const submit = function(ev) {
-  ev.preventDefault();
-}
+// const submit = function(ev) {
+//   ev.preventDefault();
+// }
 
-function selected(event) {
-  event.preventDefault();
-  let selection = document.getElementById("dropdown").value;
-}
+// function selected(event) {
+//   event.preventDefault();
+//   let selection = document.getElementById("dropdown").value;
+// }
 
-window.addEventListener("load", function() {
-  document.getElementById("environment", "kind", "naturally").addEventListener("submit", selected);
-});
-
-  const choices = function() {
-    let value = document.getElementById("dropdown1").value === "1";
+// window.addEventListener("load", function() {
+//   document.getElementById("environment", "kind", "naturally").addEventListener("submit", selected);
+// });
+document.addEventListener("DOMContentLoaded", () => {
+  const visibilityAccessor = () => {
+    let value1 = document.getElementById("dropdown1").value === "1";
     let value2 = document.getElementById("dropdown2").value === "1";
     let value3 = document.getElementById("dropdown3").value === "1";
     let value4 = document.getElementById("dropdown1").value === "2";
@@ -32,26 +32,49 @@ window.addEventListener("load", function() {
     let value8 = document.getElementById("dropdown2").value === "3";
     let value9 = document.getElementById("dropdown3").value === "3";
 
-    if (value && value2 && value3) {
-      document.getElementById("js").removeAttribute("class", "hidden");
+    if (value1 && value2 && value3) {
+      document.getElementById("language1-js").removeAttribute("class", "hidden");
     } else if (value4 && value2 && value3) {
-      document.getElementById("c-sharp").removeAttribute("class", "hidden");
+      document.getElementById("language2-cs").removeAttribute("class", "hidden");
+    } else if (value7 && value2 && value3) {
+      document.getElementById("language3-pn").removeAttribute("class", "hidden");
+    } else if (value1 && value2 && value6) {
+      document.getElementById("language1-js").removeAttribute("class", "hidden");
+    } else if (value1 && value2 && value9) {
+      document.getElementById("language3-cs").removeAttribute("class", "hidden");
+    } else if (value1 && value5 && value6) {
+      document.getElementById("language3-pn").removeAttribute("class", "hidden");
+    } else if (vaule1 && value5 && value9) {
+      document.getElementById("language2-cs").removeAttribute("class", "hidden");
+    } else if (value1 && value8 && value6) {
+      document.getElementById("language3-pn").removeAttribute("class", "hidden");
+    } else if (value1 && value8 && value9) {
+      document.getElementById("language1-js").removeAttribute("class", "hidden");
+    } else if (value7 && value8 && value9) {
+      document.getElementById("language1-js").removeAttribute("class", "hidden");
+    } else if (value4 && value5 && value6) {
+      document.getElementById("language2-cs").removeAttribute("class", "hidden");
+    } else if (value4 && value5 && value9) {
+      document.getElementById("language3-pn").removeAttribute("class", "hidden");
+    } else if (value4 && value8 && value9) {
+      document.getElementById("language2-cs").removeAttribute("class", "hidden");
+    } else if (value4 && value2 && value6) {
+      document.getElementById("language1-js").removeAttribute("class", "hidden");
+    } else if (value4 && value2 && value9) {
+      document.getElementById("language3-pn").removeAttribute("class", "hidden");
+    } else if (value7 && value2 && value6) {
+      document.getElementById("language2-cs").removeAttribute("class", "hidden");
+    } else if (value7 && value2 && value9) {
+      document.getElementById("language1-js").removeAttribute("class", "hidden");
+    } else {
+      document.getElementById("not-a-return").removeAttribute("class", "hidden");
     }
-
-  const visibilityAccessor = () => {
-
+    
+   
+    document.getElementById("btn-submit").addEventListener;
+    
+    // ("click", visibilityAccessor");
+  
   }
-}
+});
 
-// <html> 
-//   <option>
-//     <div onclick={{visibilityAccessor()}}></div> </div>
-//   </option>
-// </html>
-
-
-  // function selectValues() {
-  //   document.querySelector("#dropdown");
-  //   output = select.options[select.selectedIndex].value;
-  //   document.querySelector("#javascript").textContent = javascript;
-  // }
