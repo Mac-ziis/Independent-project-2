@@ -74,5 +74,9 @@
 }
 
 .hidden {
+  font-size 1px;
+}
+
+.hidden {
   display: none;
 }
