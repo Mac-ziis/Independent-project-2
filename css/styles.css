@@ -16,6 +16,10 @@
   margin: 0;
 }
 
+em {
+  color: #f25042;
+}
+
 h3 {
   font-size: 8px;
 }
