@@ -2,7 +2,7 @@
 
 #### By _**Mac Granger**_
 
-#### _this website provides 3 separate dropdown menus with separate options under 3 categories, the combination of 3 separate values will return a recommended programming language to learn upon "submit". the Reload button will reload the page and allow the user to resubmit their values for a different answer._
+#### _this website provides 5 separate dropdown menus with 3 separate options under 5 categories, the combination of 5 separate values will return a recommended programming language to learn upon "submit". the Reload button will reload the page and allow the user to resubmit their values for a different answer._
 
 ## Technologies Used
 
@@ -14,22 +14,20 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This application takes 5 different responses from 5 different dropdown menus and returns a recommended programming language based on the input and after clicking the "Submit" button. Each combination should return a varying language but there is some overlap due to there only being 3 suggested languages. After getting a response the user can then hit the "Reload" button to refresh the page and then input different choices to get a new response, the responses will not overlap and the page needs to be reloaded for the user to get a new string. Only the first 3 menus have an impact on the response given for the last 2 are not added to the javascript combinations. All combinations should be included but if any are input then the string displayed will communicate that the user needs to reload, choose different answers, and resubmit._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+* _In your command termial you will type the following: git clone https://github.com/Mac-ziis/Independent-project-2_
+* _Once the project is cloned to your machine, navigate to the directory and open the main project directory along with all of the files included. This will require Vs Code or software with similar capabilities._
+* _Once the file/files are open in your software, in this case I am using Visual studio code, you will right click in the index.html file and open your live server in the default browser._
+* _Once the browser is open you only need to select your options from the 5 dropdown menus provided and then click the "submit" button and your repsonse will be displayed._
+* _To refresh the page and receive new responses you will need to click the "Reload" button and select your new reponses before submitting again._
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _Styling for the separate menu buttons needs to be polished. spacing is uneven._
+* _Some value combinations are missing, when submitted this will return an intentional error string._
 
 ## License
 
